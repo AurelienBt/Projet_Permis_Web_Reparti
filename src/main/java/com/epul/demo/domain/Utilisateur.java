@@ -7,13 +7,13 @@ import javax.persistence.*;
 public class Utilisateur {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "NumUtil", nullable = false)
+    @Column(name = "numutil", nullable = false)
     private Integer id;
 
-    @Column(name = "NomUtil", nullable = false, length = 100)
+    @Column(name = "nomutil", nullable = false, length = 100)
     private String nomUtil;
 
-    @Column(name = "MotPasse", nullable = false, length = 100)
+    @Column(name = "motpasse", nullable = false, length = 100)
     private String motPasse;
 
     @Column(name = "salt", nullable = false, length = 100)
